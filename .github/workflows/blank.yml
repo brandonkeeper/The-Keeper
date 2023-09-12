@@ -1,0 +1,12 @@
+name: Keeper Secrets Manager Github Action
+on:
+ workflow_dispatch:
+
+jobs: 
+ ksm-test-random:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: Retreive Secrets From KSM
+   id: ksecrets
+   uses
