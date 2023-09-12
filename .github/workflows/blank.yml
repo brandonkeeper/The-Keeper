@@ -18,5 +18,5 @@ jobs:
 
    - name: View password
      run: |
-      echo 'pwd: ${{steps.ksecrets.outputs.pwd }}'
+      echo "password: ${{ env.pwd }}"
    
