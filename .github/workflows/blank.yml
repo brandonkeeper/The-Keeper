@@ -11,9 +11,9 @@ jobs:
      id: ksecrets
      uses: Keeper-Security/ksm-action@master
      with:
-       keeper-secret-config: ${{ secrets.  }}
+       keeper-secret-config: ${{ secrets.PAMPASS }}
        secrets: |
-         UID/field/password > pwd
+        9SvyI_7rsdhleca9zWrvHA/field/password > pwd
 
    - name: View password
      run: |
