@@ -8,5 +8,14 @@ jobs:
 
   steps:
    - name: Retreive Secrets From KSM
-   id: ksecrets
-   uses
+     id: ksecrets
+     uses: Keeper-Security/ksm-action@master
+     with:
+       keeper-secret-config: ${{ secrets.  }}
+       secrets: 
+         UID/field/password > pwd
+
+   - name: View password
+     run: 
+     echo
+   
