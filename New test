@@ -25,3 +25,4 @@ jobs:
         run: |
           echo "Password is ${{ env.PASSWORD }}"
           echo "Login is ${{ steps.ksecrets.outputs.LOGIN }}"
+ 
