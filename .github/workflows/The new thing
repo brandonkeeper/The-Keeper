@@ -1,1 +1,9 @@
-
+- name: Keeper Secrets Manager Github Action
+  # You may pin to the exact commit or the version.
+  # uses: Keeper-Security/ksm-action@5ad8c4f605874dc46869006e5ff9b159101274f4
+  uses: Keeper-Security/ksm-action@v1.0.8
+  with:
+    # Keeper Secrets Manager configuration json or base64 string
+    keeper-secret-config: 
+    # A list of secrets to retrieve from Keeper Vault
+    secrets: 
