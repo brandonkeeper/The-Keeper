@@ -17,9 +17,11 @@ jobs:
         teyUQ49ZZLeAq-LZku2xIQ/field/password > env:pwd
         teyUQ49ZZLeAq-LZku2xIQ/field/login > lng
         teyUQ49ZZLeAq-LZku2xIQ/field/login > env:lng
+        teyUQ49ZZLeAq-LZku2xIQ/file/1key.png > file:/tmp/1key.png
 
-   - name: View password
+   - name: View login
      run: |
       echo "password: ${{ env.pwd }}"
-      echo "password: ${{ env.lng }}"
+      echo "login: ${{ env.lng }}"
+      
    
