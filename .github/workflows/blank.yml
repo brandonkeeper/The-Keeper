@@ -12,10 +12,10 @@ jobs:
      uses: Keeper-Security/ksm-action@master
      with:
        keeper-secret-config: ${{ secrets.  }}
-       secrets: 
+       secrets: |
          UID/field/password > pwd
 
    - name: View password
-     run: 
-     echo
+     run: |
+      echo 'pwd: ${{steps.ksecrets.outputs.pwd }}'
    
