@@ -13,8 +13,8 @@ jobs:
      with:
        keeper-secret-config: ${{ secrets.PAMPASS }}
        secrets: |
-        9SvyI_7rsdhleca9zWrvHA/field/password > pwd
-        9SvyI_7rsdhleca9zWrvHA/field/password > env:pwd
+        teyUQ49ZZLeAq-LZku2xIQ/field/password > pwd
+        teyUQ49ZZLeAq-LZku2xIQ/field/password > env:pwd
 
    - name: View password
      run: |
