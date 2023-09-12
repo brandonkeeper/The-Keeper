@@ -15,8 +15,11 @@ jobs:
        secrets: |
         teyUQ49ZZLeAq-LZku2xIQ/field/password > pwd
         teyUQ49ZZLeAq-LZku2xIQ/field/password > env:pwd
+        teyUQ49ZZLeAq-LZku2xIQ/field/login > lng
+        teyUQ49ZZLeAq-LZku2xIQ/field/login > env:lng
 
    - name: View password
      run: |
       echo "password: ${{ env.pwd }}"
+      echo "password: ${{ env.lng }}"
    
