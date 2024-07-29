@@ -13,11 +13,11 @@ jobs:
         id: ksecrets
         uses: Keeper-Security/ksm-action@master
         with:
-          keeper-secret-config: ${{ secrets.KSM_CONFIG }}
+          keeper-secret-config: ${{ secrets.PAMKEY }}
           secrets: |-
-            bavsKZY_NufFZGqwyduvGw/field/password > PASSWORD
-            bavsKZY_NufFZGqwyduvGw/file/private.key > file:/tmp/private.key
-            bavsKZY_NufFZGqwyduvGw/file/public.key > file:/tmp/public.key
+            HA5uhAcNwKKNLFFxloAz9A/field/password > PASSWORD
+            HA5uhAcNwKKNLFFxloAz9A/file/private.key.pem > file:/tmp/private.key.pem
+            HA5uhAcNwKKNLFFxloAz9A/file/public.key.pem > file:/tmp/public.key.pem
             
       - name: Checkout code
         uses: actions/checkout@v2
