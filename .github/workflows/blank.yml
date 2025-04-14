@@ -23,5 +23,4 @@ jobs:
      run: |
       echo "password: ${{ env.pwd }}"
       echo "login: ${{ env.lng }}"
-      echo "login: $env:lng"
    
