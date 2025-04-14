@@ -11,7 +11,8 @@ jobs:
      id: ksecrets
      uses: Keeper-Security/ksm-action@master
      with:
-       keeper-secret-config: ${{ secrets.PAMKEY }}
+       #keeper-secret-config: ${{ secrets.PAMKEY }}
+       keeper-secret-config: $PAMKEY
        secrets: |
         teyUQ49ZZLeAq-LZku2xIQ/field/password > pwd
         teyUQ49ZZLeAq-LZku2xIQ/field/password > env:pwd
