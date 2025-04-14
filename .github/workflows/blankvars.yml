@@ -13,8 +13,7 @@ jobs:
      with:
        #keeper-secret-config: ${{ secrets.PAMKEY }}
        keeper-secret-config: ${{ vars.PAMKEY }}
-        vars: |
-      # secrets: |
+       vars: |
         teyUQ49ZZLeAq-LZku2xIQ/field/password > pwd
         teyUQ49ZZLeAq-LZku2xIQ/field/password > env:pwd
         teyUQ49ZZLeAq-LZku2xIQ/field/login > lng
@@ -25,5 +24,6 @@ jobs:
      run: |
       echo "password: ${{ env.pwd }}"
       echo "login: ${{ env.lng }}"
-      
+      echo "login: $lng"
+      echo "login: ${{lng}}"
    
