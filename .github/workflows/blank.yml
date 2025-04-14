@@ -25,6 +25,4 @@ jobs:
       echo "login: ${{ env.lng }}"
       echo "login: ${{ lng }}"
       echo "login: $env.lng"
-      echo "login: $lng"
-      
    
